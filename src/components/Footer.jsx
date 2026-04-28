@@ -78,7 +78,7 @@ export default function Footer() {
             <div className="flex gap-4">
 
               <a
-                href="https://twitter.com/pilltoken"
+                href="https://x.com/purplepillcoin"
                 target="_blank"
                 className="p-3 rounded-full bg-white/5 border border-purple-500/20 hover:border-purple-400 hover:bg-purple-500/10 transition"
               >
@@ -94,7 +94,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://t.me/pilltoken"
+                href="https://t.me/+1CG7RDGMr50wYjdh"
                 target="_blank"
                 className="p-3 rounded-full bg-white/5 border border-purple-500/20 hover:border-purple-400 hover:bg-purple-500/10 transition"
               >

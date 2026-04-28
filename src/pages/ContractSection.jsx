@@ -99,7 +99,7 @@ export default function ContractSection() {
 
             {/* TELEGRAM */}
             <a
-              href="https://t.me/pilltoken"
+              href="https://t.me/+1CG7RDGMr50wYjdh"
               target="_blank"
               className="flex flex-col items-center justify-center w-36 h-32 bg-blue-500/20 border border-blue-400/30 rounded-xl hover:scale-105 transition"
             >
@@ -109,7 +109,7 @@ export default function ContractSection() {
 
             {/* TWITTER */}
             <a
-              href="https://twitter.com/pilltoken"
+              href="https://x.com/purplepillcoin"
               target="_blank"
               className="flex flex-col items-center justify-center w-36 h-32 bg-white/5 border border-purple-500/20 rounded-xl hover:scale-105 hover:border-purple-400 transition"
             >
