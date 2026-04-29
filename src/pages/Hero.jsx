@@ -105,11 +105,6 @@ export default function Hero() {
 
           </div>
 
-          {/* SCROLL INDICATOR */}
-          <div className="absolute bottom-6 animate-bounce text-purple-400 text-xl">
-            ˅
-          </div>
-
         </div>
       </section>
 
