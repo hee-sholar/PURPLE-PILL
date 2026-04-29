@@ -79,9 +79,9 @@ export default function Tokenomics() {
   ];
 
   const distributions = [
-    { value: 45, label: "Public Sale" },
-    { value: 60, label: "Liquidity" },
-    { value: 80, label: "Marketing & Dev" },
+    { value: 70, label: "Public Sale" },
+    { value: 20, label: "Liquidity" },
+    { value: 10, label: "Marketing & Dev" },
   ];
 
   return (
