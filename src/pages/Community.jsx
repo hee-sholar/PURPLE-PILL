@@ -78,7 +78,7 @@ export default function Community() {
           <div className="relative rounded-2xl overflow-hidden border border-purple-500/30 shadow-[0_0_40px_rgba(168,85,247,0.5)] hover:scale-105 transition duration-500">
 
             <img
-              src="/purple.jpeg" // 🔥 replace with your actual image path
+              src="/pill1.jpeg" // 🔥 replace with your actual image path
               alt="PILL Frog"
               className="w-[320px] h-[380px] object-cover"
             />

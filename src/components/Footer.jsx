@@ -22,7 +22,7 @@ export default function Footer() {
 
     {/* LOGO */}
     <img
-      src="/purple.jpeg" // 🔥 replace with your logo path
+      src="/logo.jpeg" // 🔥 replace with your logo path
       alt="PILL Logo"
       className="w-10 h-10 object-contain"
     />
