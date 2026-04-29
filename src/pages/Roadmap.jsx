@@ -15,7 +15,7 @@ import {
 const roadmap = [
   {
     title: "Community Kickstart",
-    date: "May 2025",
+    date: "May 2026",
     icon: Users,
     points: [
       "Launch social channels",
@@ -25,7 +25,7 @@ const roadmap = [
   },
   {
     title: "Website & Branding",
-    date: "June 2025",
+    date: "June 2026",
     icon: Globe,
     points: [
       "Official website launch",
@@ -35,7 +35,7 @@ const roadmap = [
   },
   {
     title: "Token Launch",
-    date: "July 2025",
+    date: "July 2026",
     icon: Coins,
     points: [
       "Smart contract deployment",
@@ -45,71 +45,63 @@ const roadmap = [
   },
   {
     title: "Marketing Push",
-    date: "August 2025",
+    date: "August 2026",
     icon: Megaphone,
-    points: [
-      "Influencer campaigns",
-      "Social growth",
-      "Platform listings",
-    ],
+    points: ["Influencer campaigns", "Social growth", "Platform listings"],
   },
   {
     title: "Utility Rollout",
-    date: "September 2025",
+    date: "September 2026",
     icon: Sparkles,
-    points: [
-      "Staking system",
-      "NFT integration",
-      "Rewards system",
-    ],
+    points: ["Staking system", "NFT integration", "Rewards system"],
   },
   {
     title: "Security & Scaling",
-    date: "October 2025",
+    date: "October 2026",
     icon: ShieldCheck,
-    points: [
-      "Contract audit",
-      "Partnerships",
-      "Infrastructure scaling",
-    ],
+    points: ["Contract audit", "Partnerships", "Infrastructure scaling"],
   },
   {
     title: "Growth Expansion",
-    date: "November 2025",
+    date: "November 2026",
     icon: TrendingUp,
-    points: [
-      "Exchange listings",
-      "Global expansion",
-      "DAO governance",
-    ],
+    points: ["Exchange listings", "Global expansion", "DAO governance"],
   },
   {
     title: "Ecosystem Domination",
-    date: "December 2025",
+    date: "December 2026",
     icon: Rocket,
-    points: [
-      "Full ecosystem",
-      "Mass adoption",
-      "Long-term strategy",
-    ],
+    points: ["Full ecosystem", "Mass adoption", "Long-term strategy"],
   },
 ];
 
 export default function Roadmap() {
   return (
-    <section id="roadmap" className="relative py-20 md:py-28 bg-black text-white overflow-hidden">
-
-      {/* Glow */}
+    <section
+      id="roadmap"
+      className="relative py-20 md:py-28 text-white overflow-hidden"
+    >
+      {/* ================= BACKGROUND IMAGE ================= */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[500px] h-[500px] bg-purple-700/20 blur-[120px] top-0 left-1/2 -translate-x-1/2" />
+        <img
+          src="map.jpeg"
+          alt="Purple Pill Energy Background"
+          className="w-full h-full object-cover object-center"
+        />
+
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/80" />
+
+        {/* Purple glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-700/30 blur-[140px]" />
       </div>
 
-      {/* Grid */}
+      {/* Grid texture */}
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,white_1px,transparent_1px)] [background-size:20px_20px]" />
 
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
-
-        {/* HEADER */}
+      <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
+        
+        {/* ================= HEADER ================= */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -123,9 +115,8 @@ export default function Roadmap() {
           </p>
         </motion.div>
 
-        {/* ================= MOBILE TIMELINE ================= */}
+        {/* ================= MOBILE ================= */}
         <div className="md:hidden relative border-l border-purple-500/30 pl-6 space-y-10">
-
           {roadmap.map((item, i) => {
             const Icon = item.icon;
 
@@ -144,17 +135,12 @@ export default function Roadmap() {
 
                 {/* Card */}
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 backdrop-blur-md">
-                  
                   <div className="flex items-center gap-2 mb-2">
                     <Icon size={18} className="text-purple-400" />
-                    <h3 className="font-semibold text-sm">
-                      {item.title}
-                    </h3>
+                    <h3 className="font-semibold text-sm">{item.title}</h3>
                   </div>
 
-                  <p className="text-xs text-purple-300 mb-3">
-                    {item.date}
-                  </p>
+                  <p className="text-xs text-purple-300 mb-3">{item.date}</p>
 
                   <ul className="text-xs text-gray-400 space-y-1">
                     {item.points.map((p, idx) => (
@@ -167,10 +153,8 @@ export default function Roadmap() {
           })}
         </div>
 
-        {/* ================= DESKTOP TIMELINE ================= */}
+        {/* ================= DESKTOP ================= */}
         <div className="hidden md:block relative">
-
-          {/* Center line */}
           <div className="absolute left-1/2 top-0 w-[2px] h-full bg-purple-500/30 -translate-x-1/2" />
 
           {roadmap.map((item, i) => {
@@ -187,19 +171,13 @@ export default function Roadmap() {
                   isLeft ? "justify-start" : "justify-end"
                 }`}
               >
-                {/* Card */}
-                <div className="w-[45%] bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl hover:border-purple-500/40 transition">
-
+                <div className="w-[45%] bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl">
                   <div className="flex items-center gap-3 mb-3">
                     <Icon size={20} className="text-purple-400" />
-                    <h3 className="font-semibold text-lg">
-                      {item.title}
-                    </h3>
+                    <h3 className="font-semibold text-lg">{item.title}</h3>
                   </div>
 
-                  <p className="text-sm text-purple-300 mb-4">
-                    {item.date}
-                  </p>
+                  <p className="text-sm text-purple-300 mb-4">{item.date}</p>
 
                   <ul className="text-sm text-gray-400 space-y-2">
                     {item.points.map((point, idx) => (
@@ -208,7 +186,7 @@ export default function Roadmap() {
                   </ul>
                 </div>
 
-                {/* Number circle */}
+                {/* Number */}
                 <div className="absolute left-1/2 -translate-x-1/2 top-6 w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-black font-bold shadow-[0_0_20px_rgba(168,85,247,0.8)]">
                   {i + 1}
                 </div>
@@ -216,7 +194,6 @@ export default function Roadmap() {
             );
           })}
         </div>
-
       </div>
     </section>
   );

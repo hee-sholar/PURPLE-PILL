@@ -19,9 +19,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
 
         {/* LOGO */}
-        <a href="/" className="text-purple-400 cursor-pointer tracking-[0.3em] text-sm font-semibold">
-          PURPLEPILL
-        </a>
+        <a href="/" className="flex items-center gap-2 cursor-pointer">
+  <img
+    src="/logo.jpeg"
+    alt="PurplePill Logo"
+    className="h-6 w-auto"
+  />
+  <span className="text-purple-400 tracking-[0.3em] text-sm font-semibold">
+    PURPLEPILL
+  </span>
+</a>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-gray-300 text-xs tracking-widest">
