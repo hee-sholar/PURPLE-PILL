@@ -14,18 +14,8 @@ import {
 
 const roadmap = [
   {
-    title: "Community Kickstart",
-    date: "May 2026",
-    icon: Users,
-    points: [
-      "Launch social channels",
-      "Meme contests & campaigns",
-      "Core community formation",
-    ],
-  },
-  {
     title: "Website & Branding",
-    date: "June 2026",
+    date: "April & May 2026",
     icon: Globe,
     points: [
       "Official website launch",
@@ -35,7 +25,7 @@ const roadmap = [
   },
   {
     title: "Token Launch",
-    date: "July 2026",
+    date: "June 2026",
     icon: Coins,
     points: [
       "Smart contract deployment",
@@ -45,34 +35,46 @@ const roadmap = [
   },
   {
     title: "Marketing Push",
-    date: "August 2026",
+    date: "June 2026",
     icon: Megaphone,
     points: ["Influencer campaigns", "Social growth", "Platform listings"],
   },
   {
     title: "Utility Rollout",
-    date: "September 2026",
+    date: "July 2026",
     icon: Sparkles,
     points: ["Staking system", "NFT integration", "Rewards system"],
   },
   {
     title: "Security & Scaling",
-    date: "October 2026",
+    date: "August 2026",
     icon: ShieldCheck,
     points: ["Contract audit", "Partnerships", "Infrastructure scaling"],
   },
   {
     title: "Growth Expansion",
-    date: "November 2026",
+    date: "September 2026",
     icon: TrendingUp,
     points: ["Exchange listings", "Global expansion", "DAO governance"],
   },
   {
     title: "Ecosystem Domination",
-    date: "December 2026",
+    date: "November 2026",
     icon: Rocket,
     points: ["Full ecosystem", "Mass adoption", "Long-term strategy"],
   },
+  {
+  title: "Game for the project",
+  date: "December 2026",
+  icon: Users,
+  points: [
+    "Launch PurplePill interactive game",
+    "Integrate $PILL token rewards system",
+    "Introduce NFT skins & in-game assets",
+    "Leaderboard & competitive challenges",
+    "Community playtesting and feedback rollout",
+  ],
+},
 ];
 
 export default function Roadmap() {
