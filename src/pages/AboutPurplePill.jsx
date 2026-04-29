@@ -72,7 +72,7 @@ export default function AboutPurplePill() {
           >
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
               About{" "}
-              <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
                 PurplePill
               </span>
             </h2>

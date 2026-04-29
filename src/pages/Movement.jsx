@@ -20,7 +20,7 @@ export default function Movement() {
           className="text-4xl md:text-6xl font-bold"
         >
           The{" "}
-          <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-400 bg-clip-text text-transparent">
             Movement
           </span>
         </motion.h2>
